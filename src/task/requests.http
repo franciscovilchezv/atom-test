@@ -1,0 +1,26 @@
+### List tasks
+GET http://localhost:3000/tasks
+
+### Create tasks
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "description": "d1",
+  "title": "t1",
+  "status": "PENDING"
+}
+
+### Update task
+PATCH http://localhost:3000/tasks/fHTRHAuJSapxQoYYpoEw
+Content-Type: application/json
+
+{
+  "description": "dnew",
+  "title": "tnew",
+  "status": "COMPLETED"
+}
+
+### Delete user
+DELETE http://localhost:3000/tasks/fHTRHAuJSapxQoYYpoEw
+Content-Type: application/json
